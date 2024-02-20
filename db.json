@@ -3,8 +3,8 @@
     {
       "id": 1,
       "name": "Scooby",
-      "type": "Golden Retriever",
-      "status": "Adopted"
+      "type": "Golden Retriever"
+      
     }
   ]
 }
