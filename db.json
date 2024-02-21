@@ -1,10 +1,9 @@
 {
-  "pets": [
+  "books": [
     {
-      "id": 1,
-      "name": "Scooby",
-      "type": "Golden Retriever"
-      
+      "id" : 1,
+      "titulo" : "O diário de um banana",
+      "autor" : "josé joaquim"
     }
   ]
 }
