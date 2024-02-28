@@ -1,0 +1,269 @@
+openapi: 3.0.1
+info:
+  title: New feature
+  version: "1"
+paths:
+  '/ailos/pix/api/v11/Estatistica/consultar/usuario/{numeroDocumento}':
+    get:
+      summary: proxy generated
+      parameters:
+      - name: Host
+        in: header
+        required: true
+        schema:
+          type: string
+      - name: User-Agent
+        in: header
+        required: true
+        schema:
+          type: string
+      - name: accept
+        in: header
+        required: true
+        schema:
+          type: string
+      - name: x-ailos-auth
+        in: header
+        required: true
+        schema:
+          type: string
+        examples:
+          TESTE_SUCCESS:
+            value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhMDlhMjIxMi04YWIyLTRhOGEtOTYyYy1kYjU1ZGNhNTc3YTQiLCJzdWJUeXBlIjoiVElUVUxBUiIsImlhdCI6MTc1NTQzMjI0NSwiZXhwIjoxNzU1NDMzMTM4LCJhdWQiOiI2Y2YyZjhjNi05YjA3LTQ2OTctYjRjMy0zYWQ4ZmIwN2FhZGQiLCJhY2NvdW50VHlwZSI6IkNPTlRBX0NPUlJFTlRFX1BGIiwiYWNjb3VudElkIjoiYjUwMzI4MGYtNjQwMi03YTU3LWUwNjMtMDEwMDAwN2YxMjlhIiwiZGV2aWNlSWQiOiIiLCJjaGFubmVsIjoiTU9CSUxFIiwiY29vcGVyYXRpdmVNZW1iZXJJZCI6ImEwOWEyMjEyLThhYjItNGE4YS05NjJjLWRiNTVkY2E1NzdhNCIsInR5cGUiOiJDT09QRVJBRE8iLCJyb2xlcyI6WyJDT05UQV9DT1JSRU5URSJdLCJpcE9yaWdlbSI6IiIsImlkVG9rZW5BY2Nlc3MiOiI2Y2YyZjhjNi05YjA3LTQ2OTctYjRjMy0zYWQ4ZmIwN2FhZGQiLCJpZFRva2VuIjoiNTg2MGRlNDMtYThlOC00OThjLTg3YTktYTM5MmUzN2NhMzI0In0.ZpYwGqETmMI1ES3kxOu69Mm0oonyFYyypX31dXPXfdQ        
+      - name: numeroDocumento
+        in: path
+        description: CPF ou CNPJ do Usuário a ser consultado
+        required: true
+        schema:
+          type: string
+        examples:
+          TESTE_SUCCESS:
+            value: 00604083912
+      responses:
+        "200":
+          description: proxy generated
+          headers:
+            Date:
+              required: true
+              schema:
+                type: string
+            X-Frame-Options:
+              required: true
+              schema:
+                type: string
+            api-supported-versions:
+              required: true
+              schema:
+                type: string
+            Strict-Transport-Security:
+              required: true
+              schema:
+                type: string
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/1_ResponseBody'
+              examples:
+                TESTE_SUCCESS:
+                  value:
+                    numeroDocumento: "00604083915"
+components:
+  schemas:
+    Transacoes:
+      required:
+      - valorUltimosDozeMeses
+      - valorUltimosNoventaDias
+      - valorUltimosSessentaMeses
+      properties:
+        valorUltimosNoventaDias:
+          type: number
+        valorUltimosDozeMeses:
+          type: number
+        valorUltimosSessentaMeses:
+          type: number
+    TransacoesSpi:
+      required:
+      - dataHoraUltimoEvento
+      - transacoes
+      properties:
+        dataHoraUltimoEvento:
+          type: string
+        transacoes:
+          $ref: '#/components/schemas/Transacoes'
+    FalsidadeIdeologica:
+      required:
+      - valorUltimosDozeMeses
+      - valorUltimosNoventaDias
+      - valorUltimosSessentaMeses
+      properties:
+        valorUltimosNoventaDias:
+          type: number
+        valorUltimosDozeMeses:
+          type: number
+        valorUltimosSessentaMeses:
+          type: number
+    ContaLaranja:
+      required:
+      - valorUltimosDozeMeses
+      - valorUltimosNoventaDias
+      - valorUltimosSessentaMeses
+      properties:
+        valorUltimosNoventaDias:
+          type: number
+        valorUltimosDozeMeses:
+          type: number
+        valorUltimosSessentaMeses:
+          type: number
+    ContaFraudador:
+      required:
+      - valorUltimosDozeMeses
+      - valorUltimosNoventaDias
+      - valorUltimosSessentaMeses
+      properties:
+        valorUltimosNoventaDias:
+          type: number
+        valorUltimosDozeMeses:
+          type: number
+        valorUltimosSessentaMeses:
+          type: number
+    Outra:
+      required:
+      - valorUltimosDozeMeses
+      - valorUltimosNoventaDias
+      - valorUltimosSessentaMeses
+      properties:
+        valorUltimosNoventaDias:
+          type: number
+        valorUltimosDozeMeses:
+          type: number
+        valorUltimosSessentaMeses:
+          type: number
+    FraudeDesconhecida:
+      required:
+      - valorUltimosDozeMeses
+      - valorUltimosNoventaDias
+      - valorUltimosSessentaMeses
+      properties:
+        valorUltimosNoventaDias:
+          type: number
+        valorUltimosDozeMeses:
+          type: number
+        valorUltimosSessentaMeses:
+          type: number
+    FraudeTotalSpi:
+      required:
+      - valorUltimosDozeMeses
+      - valorUltimosNoventaDias
+      - valorUltimosSessentaMeses
+      properties:
+        valorUltimosNoventaDias:
+          type: number
+        valorUltimosDozeMeses:
+          type: number
+        valorUltimosSessentaMeses:
+          type: number
+    FraudePspDistintos:
+      required:
+      - valorUltimosDozeMeses
+      - valorUltimosNoventaDias
+      - valorUltimosSessentaMeses
+      properties:
+        valorUltimosNoventaDias:
+          type: number
+        valorUltimosDozeMeses:
+          type: number
+        valorUltimosSessentaMeses:
+          type: number
+    MarcacoesFraude:
+      required:
+      - contaFraudador
+      - contaLaranja
+      - dataHoraUltimoEvento
+      - falsidadeIdeologica
+      - fraudeDesconhecida
+      - fraudePspDistintos
+      - fraudeTotalSpi
+      - outra
+      properties:
+        dataHoraUltimoEvento:
+          type: string
+        falsidadeIdeologica:
+          $ref: '#/components/schemas/FalsidadeIdeologica'
+        contaLaranja:
+          $ref: '#/components/schemas/ContaLaranja'
+        contaFraudador:
+          $ref: '#/components/schemas/ContaFraudador'
+        outra:
+          $ref: '#/components/schemas/Outra'
+        fraudeDesconhecida:
+          $ref: '#/components/schemas/FraudeDesconhecida'
+        fraudeTotalSpi:
+          $ref: '#/components/schemas/FraudeTotalSpi'
+        fraudePspDistintos:
+          $ref: '#/components/schemas/FraudePspDistintos'
+    NotificacoesRejeitadas:
+      required:
+      - valorUltimosDozeMeses
+      - valorUltimosNoventaDias
+      - valorUltimosSessentaMeses
+      properties:
+        valorUltimosNoventaDias:
+          type: number
+        valorUltimosDozeMeses:
+          type: number
+        valorUltimosSessentaMeses:
+          type: number
+    NotificacoesInfracao:
+      required:
+      - dataHoraUltimoEvento
+      - notificacoesEmAberto
+      - notificacoesPspEmAberto
+      - notificacoesRejeitadas
+      properties:
+        dataHoraUltimoEvento:
+          type: string
+        notificacoesEmAberto:
+          type: number
+        notificacoesPspEmAberto:
+          type: number
+        notificacoesRejeitadas:
+          $ref: '#/components/schemas/NotificacoesRejeitadas'
+    Contas:
+      required:
+      - contasRegistradas
+      - dataHoraUltimoEvento
+      properties:
+        dataHoraUltimoEvento:
+          type: string
+        contasRegistradas:
+          type: number
+    EstatisticasDoUsuario:
+      required:
+      - contas
+      - marcacoesFraude
+      - notificacoesInfracao
+      - transacoesSpi
+      properties:
+        transacoesSpi:
+          $ref: '#/components/schemas/TransacoesSpi'
+        marcacoesFraude:
+          $ref: '#/components/schemas/MarcacoesFraude'
+        notificacoesInfracao:
+          $ref: '#/components/schemas/NotificacoesInfracao'
+        contas:
+          $ref: '#/components/schemas/Contas'
+    "1_ResponseBody":
+      required:
+      - cpfCnpj
+      - dataHoraRetornoDict
+      - estatisticasDoUsuario
+      - idCorrelacao
+      properties:
+        dataHoraRetornoDict:
+          type: string
+        idCorrelacao:
+          type: string
+        cpfCnpj:
+          type: number
+        estatisticasDoUsuario:
+          $ref: '#/components/schemas/EstatisticasDoUsuario'

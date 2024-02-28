@@ -1,0 +1,93 @@
+{
+    "http-request": {
+        "path": "/ailos/pix/api/v11/Estatistica/consultar/usuario/00604083912",
+        "method": "GET",
+        "headers": {
+            "Host": "localhost:9000",
+            "User-Agent": "curl/7.81.0",
+            "accept": "text/plain",
+            "x-ailos-auth": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhMDlhMjIxMi04YWIyLTRhOGEtOTYyYy1kYjU1ZGNhNTc3YTQiLCJzdWJUeXBlIjoiVElUVUxBUiIsImlhdCI6MTc1NTQzMjI0NSwiZXhwIjoxNzU1NDMzMTM4LCJhdWQiOiI2Y2YyZjhjNi05YjA3LTQ2OTctYjRjMy0zYWQ4ZmIwN2FhZGQiLCJhY2NvdW50VHlwZSI6IkNPTlRBX0NPUlJFTlRFX1BGIiwiYWNjb3VudElkIjoiYjUwMzI4MGYtNjQwMi03YTU3LWUwNjMtMDEwMDAwN2YxMjlhIiwiZGV2aWNlSWQiOiIiLCJjaGFubmVsIjoiTU9CSUxFIiwiY29vcGVyYXRpdmVNZW1iZXJJZCI6ImEwOWEyMjEyLThhYjItNGE4YS05NjJjLWRiNTVkY2E1NzdhNCIsInR5cGUiOiJDT09QRVJBRE8iLCJyb2xlcyI6WyJDT05UQV9DT1JSRU5URSJdLCJpcE9yaWdlbSI6IiIsImlkVG9rZW5BY2Nlc3MiOiI2Y2YyZjhjNi05YjA3LTQ2OTctYjRjMy0zYWQ4ZmIwN2FhZGQiLCJpZFRva2VuIjoiNTg2MGRlNDMtYThlOC00OThjLTg3YTktYTM5MmUzN2NhMzI0In0.ZpYwGqETmMI1ES3kxOu69Mm0oonyFYyypX31dXPXfdQ"
+        },
+        "numeroDocumento": "00604083912",
+        "body": ""
+    },
+    "http-response": {
+        "status": 200,
+        "body": {
+            "dataHoraRetornoDict": "2024-02-26T13:12:14.351Z",
+            "idCorrelacao": "B20240226101214339054632124511EA",
+            "cpfCnpj": 604083912,
+            "estatisticasDoUsuario": {
+                "transacoesSpi": {
+                    "dataHoraUltimoEvento": "1970-01-01T00:00:00Z",
+                    "transacoes": {
+                        "valorUltimosNoventaDias": 0,
+                        "valorUltimosDozeMeses": 0,
+                        "valorUltimosSessentaMeses": 0
+                    }
+                },
+                "marcacoesFraude": {
+                    "dataHoraUltimoEvento": "1970-01-01T00:00:00Z",
+                    "falsidadeIdeologica": {
+                        "valorUltimosNoventaDias": 0,
+                        "valorUltimosDozeMeses": 0,
+                        "valorUltimosSessentaMeses": 0
+                    },
+                    "contaLaranja": {
+                        "valorUltimosNoventaDias": 0,
+                        "valorUltimosDozeMeses": 0,
+                        "valorUltimosSessentaMeses": 0
+                    },
+                    "contaFraudador": {
+                        "valorUltimosNoventaDias": 0,
+                        "valorUltimosDozeMeses": 0,
+                        "valorUltimosSessentaMeses": 0
+                    },
+                    "outra": {
+                        "valorUltimosNoventaDias": 0,
+                        "valorUltimosDozeMeses": 0,
+                        "valorUltimosSessentaMeses": 0
+                    },
+                    "fraudeDesconhecida": {
+                        "valorUltimosNoventaDias": 0,
+                        "valorUltimosDozeMeses": 0,
+                        "valorUltimosSessentaMeses": 0
+                    },
+                    "fraudeTotalSpi": {
+                        "valorUltimosNoventaDias": 0,
+                        "valorUltimosDozeMeses": 0,
+                        "valorUltimosSessentaMeses": 0
+                    },
+                    "fraudePspDistintos": {
+                        "valorUltimosNoventaDias": 0,
+                        "valorUltimosDozeMeses": 0,
+                        "valorUltimosSessentaMeses": 0
+                    }
+                },
+                "notificacoesInfracao": {
+                    "dataHoraUltimoEvento": "1970-01-01T00:00:00Z",
+                    "notificacoesEmAberto": 0,
+                    "notificacoesPspEmAberto": 0,
+                    "notificacoesRejeitadas": {
+                        "valorUltimosNoventaDias": 0,
+                        "valorUltimosDozeMeses": 0,
+                        "valorUltimosSessentaMeses": 0
+                    }
+                },
+                "contas": {
+                    "dataHoraUltimoEvento": "2023-11-07T01:22:52.391Z",
+                    "contasRegistradas": 3
+                }
+            }
+        },
+        "status-text": "OK",
+        "headers": {
+            "Date": "Mon, 26 Feb 2024 13:12:14 GMT",
+            "Content-Type": "application/json; charset=utf-8",
+            "Content-Length": "1416",
+            "X-Frame-Options": "deny",
+            "api-supported-versions": "10.0, 11.0",
+            "Strict-Transport-Security": "max-age=15724800; includeSubDomains"
+        }
+    }
+}
