@@ -1,38 +1,32 @@
-{
-  "contas": [
-    {
-      "conta": {
-        "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "numero": 0,
-        "produto": "string",
-        "cooperativa": {
-          "codigo": 0,
-          "nome": "string"
-        },
-        "senhaTransacional": true,
-        "situacao": 0,
-        "numeroPA": 0,
-        "numeroMatricula": 0,
-        "dataAbertura": "2024-07-31T20:46:55.875Z"
-      },
-      "cooperado": {
-        "numeroDocumento": "string",
-        "codigoCIAM": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
-        "idConhecimentoCooperado": 0,
-        "nome": "string",
-        "emails": [
-          {
-            "email": "string"
-          }
-        ],
-        "telefones": [
-          {
-            "ddd": 0,
-            "numero": "string"
-          }
-        ]
-      }
-    }
-  ],
-  "totalRegistros": 0
-}
+[
+  {
+    "id": 10,
+    "name": "Jane Doe",
+    "department": "Engineering",
+    "designation": "Engineering Manager"
+  },
+  {
+    "id": 20,
+    "name": "George Doe",
+    "department": "Engineering",
+    "designation": "Developer"
+  },
+  {
+    "id": 30,
+    "name": "Chuck Doe",
+    "department": "Engineering",
+    "designation": "Senior Developer"
+  },
+  {
+    "id": 40,
+    "name": "Jill Doe",
+    "department": "Engineering",
+    "designation": "Principal Engineer"
+  },
+  {
+    "id": 50,
+    "name": "Holly Doe",
+    "department": "Engineering",
+    "designation": "Developer"
+  }
+]
